@@ -28,6 +28,8 @@
 </head>
 <body>
     <header class="tagline-nav">
+        
+
         <div class="tagline-text">
 
             <div class="tagline-text-elements">
@@ -67,8 +69,34 @@
 
 
                 </div>
+                
+                    <button class="button-bars" id="btn-bars" onclick="toggleMenu()"><span class="bars-icon"><i class="fa-solid fa-bars"></i></span></button>
 
-                <span class="bars-icon"><i class="fa-solid fa-bars"></i></span>
+                    <section class="wrap" id="subMenu">
+
+                        <div class="navigation-wrap">
+            
+                            <p class="icon-wrap" onclick="toggleMenu()"><i class="fa-solid fa-x"></i></p>
+                            
+                            <div class="search-lines">
+                                <hr class="wrap-line">
+                                <p class="search-wrap"><span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span> <input type="text" placeholder="Search.."></p>
+                                <hr class="wrap-line">
+                            </div>
+                
+                            <div class="nav-wrap">
+                                <a href="#"><p class="nav-wrap-text">BREAK INTO TECH PROGRAM</p></a>
+                                <a href="#"><p class="nav-wrap-text">SKILL COURSES</p></a>
+                                <a href="#"><p class="nav-wrap-text">STUDENTS OUTCOMES</p></a>
+                                <a href="#"><p class="nav-wrap-text">TUITION</p></a>
+                                <a href="#"><p class="nav-wrap-text red-text"><span>FREE CODING CAMP</span></p></a>
+                            </div>
+                        
+                    </section>  
+
+            </div>
+                    
+                    
 
             </div>
 
@@ -77,6 +105,9 @@
     </header>
     
     <section class="start">
+
+
+        
 
         <div class="start-elements">
             <h2 class="start-title">
@@ -97,21 +128,23 @@
 
         </div>
 
-        
+        <section class="learn">
+
+            <div class="learn-elements">
+    
+            <p class="learn-p">LEARN THE SKILLS TO BECOME A</p>
+         
+            <p class="learn-p-two"><span class="learn-icon"><i class="fa-solid fa-code"></i></span>Front end Developer</p>
+
+            <p class="learn-p-three"><span class="learn-icon"><i class="fa-solid fa-paintbrush"></i></span>Designer</p>
+         
+            </div>
+        </section>
     
 
     </section>
 
-    <section class="learn">
-        <div class="learn-elements">
-
-        <p class="learn-p">LEARN THE SKILLS TO BECOME A</p>
-     <div class="learn-flex">
-         <p class="learn-p-two"><span class="learn-icon"><i class="fa-solid fa-code"></i></span>Front end Developer</p>
-         <p class="learn-p-two"><span class="learn-icon"><i class="fa-solid fa-paintbrush"></i></span>Designer</p>
-     </div>
-        </div>
-    </section>
+    
 
 
     <section class="video">
@@ -119,6 +152,17 @@
     </section>
 
    
+    
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+
+    </script>
+
+    
 
 
 </body>
