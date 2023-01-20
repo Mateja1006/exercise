@@ -628,6 +628,7 @@
   
   /* WRAP */
 
+
   .wrap {
 
     position: absolute;
@@ -651,7 +652,11 @@
     max-height: 100vh;
   }
 
-  
+  .container#blur.open-menu{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+  }
 
   .navigation-wrap {
     display: flex;
@@ -710,3 +715,5 @@
     border: none;
     
   }
+
+  

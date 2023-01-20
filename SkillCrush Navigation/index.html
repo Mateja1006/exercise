@@ -70,13 +70,13 @@
 
                 </div>
                 
-                    <button class="button-bars" id="btn-bars" onclick="toggleMenu()"><span class="bars-icon"><i class="fa-solid fa-bars"></i></span></button>
+                    <button class="button-bars" id="btn-bars" onclick="toggleMenu()" onclick="toggle()"><span class="bars-icon"><i class="fa-solid fa-bars"></i></span></button>
 
                     <section class="wrap" id="subMenu">
 
                         <div class="navigation-wrap">
             
-                            <p class="icon-wrap" onclick="toggleMenu()"><i class="fa-solid fa-x"></i></p>
+                            <p class="icon-wrap" onclick="toggleMenu()" onclick="toggle()"><i class="fa-solid fa-x"></i></p>
                             
                             <div class="search-lines">
                                 <hr class="wrap-line">
@@ -103,63 +103,80 @@
         <Hr>
 
     </header>
+
     
-    <section class="start">
+    <div class="container" id="blur">
 
 
         
 
-        <div class="start-elements">
-            <h2 class="start-title">
-                <p class="start-title-p">
-                    CODE YOUR WAY
-                </p>
-            </h2>
+        <section class="start">
 
-            <h3 class="start-sub-title">
-                <p class="start-sub-title-p">
-                    TO A <span class="sub-title-span">MORE</span> FULFILLING & <span class="sub-title-span">HIGHER</span> PAYING CAREER IN TECH
-                </p>
-            </h3>
 
-            <button class="start-button">START FOR FREE</button>
             
-            <p class="credit">(No Credit Card Required)</p>
 
-        </div>
+            <div class="start-elements">
+                <h2 class="start-title">
+                    <p class="start-title-p">
+                        CODE YOUR WAY
+                    </p>
+                </h2>
 
-        <section class="learn">
+                <h3 class="start-sub-title">
+                    <p class="start-sub-title-p">
+                        TO A <span class="sub-title-span">MORE</span> FULFILLING & <span class="sub-title-span">HIGHER</span> PAYING CAREER IN TECH
+                    </p>
+                </h3>
 
-            <div class="learn-elements">
-    
-            <p class="learn-p">LEARN THE SKILLS TO BECOME A</p>
-         
-            <p class="learn-p-two"><span class="learn-icon"><i class="fa-solid fa-code"></i></span>Front end Developer</p>
+                <button class="start-button">START FOR FREE</button>
+                
+                <p class="credit">(No Credit Card Required)</p>
 
-            <p class="learn-p-three"><span class="learn-icon"><i class="fa-solid fa-paintbrush"></i></span>Designer</p>
-         
             </div>
+
+            <section class="learn">
+
+                <div class="learn-elements">
+        
+                <p class="learn-p">LEARN THE SKILLS TO BECOME A</p>
+            
+                <p class="learn-p-two"><span class="learn-icon"><i class="fa-solid fa-code"></i></span>Front end Developer</p>
+
+                <p class="learn-p-three"><span class="learn-icon"><i class="fa-solid fa-paintbrush"></i></span>Designer</p>
+            
+                </div>
+            </section>
+        
+
         </section>
-    
 
-    </section>
-
-    
+        
 
 
-    <section class="video">
+        <section class="video">
 
-    </section>
-
-   
+        </section>
+        
+       <!-- Container div end  -->
+                 </div>
+        <!-- -------------- -->
     
     <script>
         let subMenu = document.getElementById("subMenu");
 
         function toggleMenu(){
             subMenu.classList.toggle("open-menu");
+            var blur = document.getElementById("blur");
+            blur.classList.toggle("open-menu")
         }
 
+        
+
+        function toggle(){
+            var blur = document.getElementById("blur");
+            blur.classList.toggle("open-menu")
+        }
+    
     </script>
 
     
