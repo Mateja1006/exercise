@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+
+
+
+    <title>Navigation with JS</title>
+</head>
+<body>
+    
+<div class="main-navigation">
+
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+
+            <h1 class="main-title">EXAMPLE</h1>
+
+    <nav class="main-navigation-list">
+
+        <div class="navigation-wrapper">
+    
+            <ul class="main-list">
+                <li class="main-list-item"> <a href="#">CONGRESS MINUTES</a> </li>
+                <li class="main-list-item"> <a href="#">PRO</a> </li>
+                <li class="main-list-item"> <a href="#">E&E NEWS</a> </li>
+                <div class="main-search-icon" onclick="toggleMenu()"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </ul>
+
+            <div class="search-wrap">
+
+                <div class="search-wrap-flex" id="subMenu">
+                    <input type="text" placeholder="Enter search term..">
+                    <div class="main-search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="main-search-x" onclick="toggleMenu()"><i class="fa-solid fa-x"></i></div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </nav>
+
+</div>
+
+    <hr class="main-navigation-underline">
+
+
+
+    <!-- JS -->
+    <script src="main.js"></script>
+
+</body>
+</html>
