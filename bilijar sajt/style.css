@@ -1,0 +1,379 @@
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    /* height: 100%; */
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: white
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+ 
+
+  * {
+    font-family: var(--ff-primary);
+  }
+
+  header{
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .black-bar{
+    width: inherit;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(0,0,0);
+    height: 40px;
+  }
+
+  .small-logo{
+    height: 70%;
+    width: auto;
+    margin-left: 2.3rem;
+  }
+
+
+  .nav-options{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(192, 144, 86);
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .options{
+    width: 700px;
+    margin-left: 32rem;
+    color: white;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+  }
+
+  .shop{
+    display: flex;
+    align-items: center;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .options-text{
+    font-size: 11px;
+    font-weight: 800;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  .search-input{
+    border: none;
+    width: 170px;
+  }
+
+  .shop-button{
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 11px;
+    padding: 5px 12px 5px 12px;
+  }
+
+  .options-text:hover{
+    cursor: pointer;
+    color: black;
+  }
+
+  .shop-button:hover{
+    cursor: pointer;
+    background-color: rgb(83, 83, 83);
+  }
+
+  .option-hr{
+    height: 70%;
+    color: inherit;
+    border: 1px solid rgb(161, 161, 161);
+  }
+
+  .divider{
+    border: 1.2px solid white;
+  }
+
+  .nav-main{
+    height: 40px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(35,31,32);
+    padding-right: 10rem;
+  }
+
+  .nav-grid{
+    width: fit-content;
+    height: inherit;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 3fr 1fr 3fr 3fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 1rem;
+  }
+
+  .nav-title{
+    font-size: 11px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .nav-title:hover{
+    color: rgb(219,164,95);
+  }
+
+  .big-logo{
+    height: 200%;
+  }
+
+  .content{
+    width: 100%;
+    
+  }
+
+  .board{
+    width: inherit;
+    height: auto;
+    position: relative;
+  }
+
+ 
+  .big-image{
+    width: inherit;
+    height: auto;
+    
+  }
+
+  .board-text{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  .board-title{
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .board-p{
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .board-button{
+    background-color: rgb(0,164,123);
+    border: none;
+    width: 150px;
+    height: 30px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #140f0f;
+    margin: 1rem auto 0 auto;
+  }
+
+  .board-button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 134, 101);
+  }
+
+  .container{
+    margin: 1.5rem auto;
+    width: 1200px;
+  }
+
+  .product{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  .image-product{
+    width: 100%;
+    height: auto;
+  }
+
+
+
+  .product-box{
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    background-color: rgb(17,17,17);
+    color: white;
+    width: 200px;
+    height: 60px;
+    border: 6px solid rgb(199, 199, 199);
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-grid{
+
+    width: inherit;
+    height: fit-content;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+
+  }
+  
+  .grid-image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .grid-image:hover>img{
+    filter: brightness(130%);
+    transition: 0.2s;
+  }
+
+  .image-box{
+    background-color: rgb(17,17,17);
+    width: 63%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10em;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+  }
+
+  .image-text{
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .bottom-grid{
+    width: 100%;
+    height: fit-content;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1.8rem;
+    margin-bottom: 5rem;
+  }
+
+  .bottom-link{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .bottom-title{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(63, 63, 63);
+  }
+
+  .bottom-divider{
+    border: 1px solid rgb(211, 210, 210);
+  }
+
+  .footer-image{
+    margin: 0 auto;
+    width: 150px;
+  }
+
+  .bottom-link:hover>.bottom-title{
+    text-shadow: 2px 2px 4px #3b3333;
+  }
+
+  .bottom-link:hover>.bottom-image{
+    filter: brightness(130%);
+    transition: 0.2s;
+  }
