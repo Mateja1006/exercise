@@ -14,9 +14,7 @@
   /*
     3. Allow percentage-based heights in the application
   */
-  html, body {
-    /* height: 100%; */
-  }
+  
   /*
     Typographic tweaks!
     4. Add accessible line-height
@@ -169,6 +167,7 @@
   .nav-grid{
     width: fit-content;
     height: inherit;
+    position: relative;
 
     display: grid;
     grid-template-columns: 2fr 1fr 2fr 3fr 1fr 3fr 3fr;
@@ -182,7 +181,7 @@
   .nav-title{
     font-size: 11px;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
     font-weight: 600;
     margin: 0;
   }
@@ -218,7 +217,7 @@
     height: fit-content;
     position: absolute;
     top: 20%;
-    left: 38%;
+    left: 37%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -227,13 +226,14 @@
 
   .board-title{
     font-size: 45px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
     text-shadow: 2px 2px 4px #000000;
   }
 
   .board-p{
     font-size: 20px;
     text-shadow: 2px 2px 4px #000000;
+    font-family: 'PT Sans Narrow', sans-serif;
   }
 
   .board-button{
@@ -272,7 +272,10 @@
     height: auto;
   }
 
-
+  .product-text{
+    font-family: 'Spectral', serif;
+    letter-spacing: 3px;
+  }
 
   .product-box{
     position: absolute;
@@ -310,8 +313,9 @@
   }
 
   .grid-image:hover>img{
+    transform: scale(1.05);
     filter: brightness(130%);
-    transition: 0.2s;
+    transition: 0.3s;
   }
 
   .image-box{
@@ -374,6 +378,159 @@
   }
 
   .bottom-link:hover>.bottom-image{
-    filter: brightness(130%);
-    transition: 0.2s;
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+
+
+  .sub-games{
+    position: absolute;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 10px;
+    
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    left: 3.9rem;
+    top: 2.5rem;
+    box-shadow: 2px 2px 6px #706f6f;
+  }
+
+  .sub-link{
+    margin: 8px 4px;
+  }
+
+  .sub-text{
+    font-size: 10px;
+    text-align: center;
+    color: rgb(88, 88, 88);
+    font-weight: 800;
+    font-family: 'Pathway Gothic One', sans-serif;
+  }
+
+  .games{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .games:hover>.sub-games{
+    display: block;
+  }
+
+  .sub-text:hover{
+    color: rgb(219,164,95);
+  }
+
+  .furniture{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub-furniture{
+    position: absolute;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 10px;
+    
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    left: 9.5rem;
+    top: 2.5rem;
+    box-shadow: 2px 2px 6px #706f6f;
+  }
+
+  .furniture:hover>.sub-furniture{
+    display: block;
+  }
+
+  .racks{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub-racks{
+    position: absolute;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 10px;
+    
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    left: 18rem;
+    top: 2.5rem;
+    box-shadow: 2px 2px 6px #706f6f;
+  }
+
+  .racks:hover>.sub-racks{
+    display: block;
+  }
+   
+  .cloth{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .sub-cloth{
+    position: absolute;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 10px;
+    
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    left:26.7rem;
+    top: 2.5rem;
+    box-shadow: 2px 2px 6px #706f6f;
+  }
+
+  .cloth:hover>.sub-cloth{
+    display: block;
+  }
+
+  .comm{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub-comm{
+    position: absolute;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 10px;
+    
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    left: 43.5rem;
+    top: 2.5rem;
+    box-shadow: 2px 2px 6px #706f6f;
+  }
+
+  .comm:hover>.sub-comm{
+    display: block;
   }
